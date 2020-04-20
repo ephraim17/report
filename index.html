@@ -2,6 +2,34 @@
 <html lang="en">
 
 <head>
+   <!-- Start of Async Drift Code -->
+<script>
+  "use strict";
+  
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('k6y3y3inb8w3');
+  </script>
+  <!-- End of Async Drift Code -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Blue DragonFly Center Coming Soon</title>
@@ -22,6 +50,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+ 
+
 
 </head>
 
@@ -35,11 +65,9 @@
       <p><strong>COVID 19 Message:</strong> I know it's all that you have, just to be strong, and that is a fight, in and out of itself, to keep it together. I know you think that you are too far gone. But hope is never lost. Hold on, don't let go. Just stay one day closer, you'll get through this. You're going to be okay. 
         <br>We are working hard to Fight COVID19- Social distancing will transform you for the better!
         </p>
-
-        
       <div class="countdown d-flex justify-content-center" data-count="2020/12/3">
         <div>
-          <h3>14</h3>
+          <h3>12</h3>
           <h4>Days</h4>
         </div>
         <div>
@@ -54,20 +82,6 @@
           <h3>%S</h3>
           <h4>Seconds</h4>
         </div>
-      </div>
-
-      <div class="subscribe">
-        <h4>Subscribe now to get the latest updates!</h4>
-        <form action="forms/notify.php" method="post" role="form" class="php-email-form">
-          <div class="subscribe-form">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-          </div>
-          <div class="mt-2">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your notification request was sent. Thank you!</div>
-          </div>
-        </form>
       </div>
 
     
